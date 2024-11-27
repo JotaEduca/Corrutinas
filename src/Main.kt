@@ -26,7 +26,7 @@ fun main() {
 
 */
 
-import kotlinx.coroutines.*
+
 
 
 /*
@@ -79,7 +79,7 @@ suspend fun obtenerTemperatura(): String {
 fun main() {
     runBlocking {
         println("Pronóstico del tiempo")
-        println(obteneInformeMeteorológico())
+        println(obtenerInformeMeteorologico())
         println("Que tengas un buen día!")
     }
 }
@@ -93,7 +93,7 @@ fun main() {
 //coroutineScope() solo se mostrará una vez que se haya completado toda la tarea, incluidas las corrutinas que haya iniciado
 //
 
-suspend fun obteneInformeMeteorológico() = coroutineScope {
+suspend fun obtenerInformeMeteorologico() = coroutineScope {
     val pronostico = async { obtenerPronostico() }
     val temperatura = async { obtenerTemperatura() }
     "${pronostico.await()} ${temperatura.await()}"
