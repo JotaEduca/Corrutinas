@@ -2,17 +2,23 @@
 
 import kotlinx.coroutines.*
 
-
 /*
-fun main() = runBlocking { // this: CoroutineScope
+
+fun main() = runBlocking { // esta... CoroutineScope
     launch { //  iniciar una nueva corrutina Y  continua
-        delay(1000L) // non-blocking delay for 1 second (default time unit is ms)
-        println("World!") // print after delay
+        delay(1000L) // Retraso sin bloqueo durante 1 segundo (la unidad de tiempo predeterminada es milisegundos)
+        println("2º DAM!") // imprime después del retraso
     }
-    println("Hello") // main coroutine continues while a previous one is delayed
+    println("Buenas tardes......") // La corrutina principal continúa mientras que la anterior se retrasa.
 }
 
+/**************************************************************************/
+/**************************************************************************/
 
+
+*/
+
+/*
 
 fun main() {
     GlobalScope.launch {
@@ -25,7 +31,8 @@ fun main() {
 }
 
 */
-
+/**************************************************************************/
+/**************************************************************************/
 /*
 suspend fun obtenerPronostico(): String {
 
@@ -43,7 +50,8 @@ suspend fun obtenerTemperatura(): String {
     //probar también que el delay sea delay(1000)
     return "30\u00b0C \n"
 }
-
+/**************************************************************************/
+/**************************************************************************/
 
 fun main() {
 
@@ -70,9 +78,14 @@ fun main() {
 
 */
 
+/**************************************************************************/
+/**************************************************************************/
+
+/*
 //Descomposición paralela
 
-//La descomposición paralela implica tomar un problema y dividirlo en subtareas más pequeñas que se puedan resolver en paralelo
+//La descomposición paralela implica tomar un problema y
+// dividirlo en subtareas más pequeñas que se puedan resolver en paralelo
 
 suspend fun obtenerInformeMeteorologico() = coroutineScope {
     val pronostico = async { obtenerPronostico() }
@@ -97,25 +110,27 @@ fun main() {
         println("\nQue tengas un buen día!")
     }
 }
-
-// CoroutineScope en Kotlin se puede definir como
-//un objeto que se hace cargo de los procesos de seguimiento de cualquier corrutina
-//que sea creada en el sistema, a través del uso de recursos como launch y async
-//
-
-//hay algunas conclusiones importantes aquí....
-//coroutineScope() solo se mostrará una vez que se haya completado toda la tarea, incluidas las corrutinas que haya iniciado
-//
-
-//la idea clave aquí para la simultaneidad estructurada es que puedes tomar varias operaciones simultáneas y
-//colocarlas en una sola operación síncrona, en la que la simultaneidad es un detalle de implementación. El único
-//requisito sobre el código de llamada es estar en una función de suspensión o una corrutina. Aparte de eso, la
-//estructura del código de llamada no necesita tener en cuenta los detalles de simultaneidad.
-//
-
-
-
+*/
 /*
+
+CoroutineScope en Kotlin se puede definir como
+un objeto que se hace cargo de los procesos de seguimiento de cualquier corrutina
+que sea creada en el sistema, a través del uso de recursos como launch y async
+
+
+hay algunas conclusiones importantes aquí....
+
+coroutineScope() solo se mostrará una vez que se haya completado toda la tarea,
+incluidas las corrutinas que haya iniciado
+
+
+la idea clave aquí para la simultaneidad estructurada es que puedes tomar varias operaciones simultáneas y
+colocarlas en una sola operación síncrona, en la que la simultaneidad es un detalle de implementación. El único
+requisito sobre el código de llamada es estar en una función de suspensión o una corrutina. Aparte de eso, la
+estructura del código de llamada no necesita tener en cuenta los detalles de simultaneidad.
+
+ */
+
 
 fun ejemploSinScope() {
     GlobalScope.launch { // NO RECOMENDADO
@@ -148,4 +163,3 @@ fun main() {
     ejemploConScope() // Imprime "Tarea completada" primero, luego "Función terminada"
 }
 
-*/
