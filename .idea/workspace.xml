@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe8cd828-305f-49e0-8d70-2b52fb2b6ba1" name="Changes" comment="Actualziación del README.md">
-      <change beforePath="$PROJECT_DIR$/.idea/modules/corru2_1.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/corru2_1.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/corru2_1.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/corru2_1.test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/corru2_1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/corru2_1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/corru2_1/.gradle/8.8/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/corru2_1/.gradle/8.8/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/corru2_1/.gradle/8.8/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/corru2_1/.gradle/8.8/checksums/sha1-checksums.bin" afterDir="false" />
-    </list>
+
+    <list default="true" id="fe8cd828-305f-49e0-8d70-2b52fb2b6ba1" name="Changes" comment="Actualziación del README.md" />
+
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
