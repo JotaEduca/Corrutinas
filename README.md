@@ -46,3 +46,6 @@ Con las **corrutinas**, puedes escribir código asíncrono, que se ha escrito tr
 
 ![Aquí una representación](CorrutinasImagen1.png)
 
+# Prueba desde Jota2 GitHub Colaborativo
+* Añadiendo comentarios del README.md
+---------------------
